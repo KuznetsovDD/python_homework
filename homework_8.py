@@ -7,6 +7,8 @@
 
 import os
 import json
+
+__all__ = ['traverse_directory_with_info', 'get_size']
 import csv
 import pickle
 
@@ -45,5 +47,9 @@ def traverse_directory_with_info(directory):
     with open('results_with_info.pickle', 'wb') as pickle_file:
         pickle.dump(results, pickle_file)
 
-# Пример использования функции
-traverse_directory_with_info('/path/to/directory')
+
+
+
+
+if __name__ == '__main__':
+    traverse_directory_with_info('D:\Проекты\python_homework\Pakage_homework_8')
